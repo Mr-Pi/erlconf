@@ -1,0 +1,2 @@
+all:
+	escript make.escript
