@@ -1,0 +1,1 @@
+ERL_FLAGS="-boot /opt/erlconf/start_ssl -proto_dist inet_tls -ssl_dist_opt server_certfile $CERTFILE -ssl_dist_opt server_secure_renegotiate true client_secure_renegotiate true"
