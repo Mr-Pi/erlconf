@@ -12,4 +12,4 @@ main(_Args) ->
 			lists:map(fun(X) -> {AppName,_,AppVsn} = X, {AppName,AppVsn} end,
 				lists:reverse(application:which_applications()))},
 	ok = file:write_file("start_ssl.rel",io_lib:fwrite("~p.~n",[Data])),
-	systools:make_script("start_ssl",[]).
+	io:format("\e[H\e[2J\e[33mresult is: \e[1m~p\e[0m~n", [systools:make_script("start_ssl",[])]).
