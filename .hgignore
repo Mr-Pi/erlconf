@@ -3,4 +3,5 @@ syntax: regexp
 ^\..*\.swp$
 ^erl_crash\.dump$
 ^start_ssl\..*$
+^99erlang$
 
